@@ -7,7 +7,7 @@ mp_face_mesh = mp.solutions.face_mesh
 face_mesh = mp_face_mesh.FaceMesh()
 
 # Load the face mask image with alpha channel
-mask_image = cv2.imread('masskkkyy.png', cv2.IMREAD_UNCHANGED)
+mask_image = cv2.imread('cffdg.png', cv2.IMREAD_UNCHANGED)
 
 # Function to overlay the face mask on the face mesh
 def overlay_mask_on_face(image, mask_image, landmarks):
@@ -49,7 +49,7 @@ def overlay_mask_on_face(image, mask_image, landmarks):
     return image
 
 # Open the webcam
-cap = cv2.VideoCapture(2)
+cap = cv2.VideoCapture(0)
 
 while True:
     # Read a frame from the webcam
